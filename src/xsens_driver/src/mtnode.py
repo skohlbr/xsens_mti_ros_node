@@ -198,11 +198,11 @@ class XSensDriver(object):
 		secs = 0
 		nsecs = 0
 		
-		if time_data:
-			# first getting the sampleTimeFine
-			time = time_data['SampleTimeFine']
-			secs = 100e-6*time
-			nsecs = 1e5*time - 1e9*math.floor(secs)							
+		#if time_data:
+		#	# first getting the sampleTimeFine
+		#	time = time_data['SampleTimeFine']
+		#	secs = 100e-6*time
+		#	nsecs = 1e5*time - 1e9*math.floor(secs)							
 		
 		if acc_data:
 			if 'Delta v.x' in acc_data: # found delta-v's
